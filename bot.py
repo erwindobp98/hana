@@ -104,7 +104,7 @@ def deposit_to_contract(network, private_key, from_address, amount_in_eth):
 
     try:
         signed_txn = web3.eth.account.sign_transaction(transaction, private_key)
-        tx_hash = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
+        tx_hash = web3.eth.send_raw_transaction(signed_txn.raw_transaction)
         return web3.to_hex(tx_hash)
     except Exception as e:
         logging.error(f"Transaction error: {e}")
