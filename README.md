@@ -9,7 +9,7 @@ Edit Private Key dan Address di File .env
 ```shell
 nano .env
 ```
-Salin kode
+Salin kode paaste on the file .env
 ```shell
 PRIVATE_KEY=your_private_key
 WALLET_ADDRESS=your_wallet_address
