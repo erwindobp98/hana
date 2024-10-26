@@ -11,7 +11,7 @@ CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 WALLET_ADDRESS = os.getenv("WALLET_ADDRESS")
 INTERVAL = int(os.getenv("INTERVAL", 6))  # Time interval in seconds (default: 6 detik)
-MAX_TRANSACTIONS = int(os.getenv("MAX_TRANSACTIONS", 5000))  # Max transactions to send
+MAX_TRANSACTIONS = int(os.getenv("MAX_TRANSACTIONS", 1000))  # Max transactions to send
 DEPOSIT_AMOUNT = float(os.getenv("DEPOSIT_AMOUNT", 0.00000000001))  # Amount of ETH to deposit
 
 w3 = Web3(Web3.HTTPProvider(RPC_URL))
