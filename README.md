@@ -45,16 +45,3 @@ Once everything is configured, you can run the bot using:
 python bot.py
 ```
 The bot will begin sending transactions based on your settings.
-
-Configuration Options
-BASE_RPC_URL: The RPC URL to connect to the Ethereum (or compatible) network.
-CONTRACT_ADDRESS: The contract address where ETH will be deposited.
-PRIVATE_KEY: The private key for the wallet that will make the deposits.
-WALLET_ADDRESS: The wallet address from which the deposit transactions will be sent.
-INTERVAL: Time interval in seconds between each deposit transaction (default is 10 minutes).
-MAX_TRANSACTIONS: The maximum number of transactions to send (default is 10).
-DEPOSIT_AMOUNT: The amount of ETH to deposit with each transaction.
-Important Notes
-Gas Fees: Make sure the wallet has enough ETH balance to cover gas fees and the deposit amounts.
-Private Key Security: Avoid hardcoding the private key in the script. Use environment variables as shown above.
-Error Handling: The bot includes basic error handling and will retry in case of network errors. However, ensure your network connection is stable.
