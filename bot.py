@@ -52,6 +52,7 @@ def main():
         try:
             deposit_to_contract()
             completed_transactions += 1
+            print(f"Completed Transactions: {completed_transactions}/{MAX_TRANSACTIONS}")  # Print the number of completed transactions
             time.sleep(INTERVAL)
         except Exception as e:
             print(f"Error in transaction loop: {str(e)}")
